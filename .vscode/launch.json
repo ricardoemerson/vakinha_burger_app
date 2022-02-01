@@ -1,0 +1,31 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "vakinha_burger",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "SM G770F",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "192.168.1.113:5555"
+    },
+    {
+      "name": "SM G770F cable",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "RX8N909VMYA"
+    },
+    {
+      "name": "vakinha_burger (profile mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    }
+  ]
+}
