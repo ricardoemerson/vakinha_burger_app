@@ -5,6 +5,8 @@ import '../theme/theme.dart';
 class Button extends StatelessWidget {
   final String label;
   final Color? color;
+  final double? width;
+  final double height;
   final bool rounded;
   final bool loading;
   final VoidCallback? onPressed;
@@ -13,6 +15,8 @@ class Button extends StatelessWidget {
     Key? key,
     required this.label,
     this.color,
+    this.width,
+    this.height = 50,
     this.rounded = false,
     this.loading = false,
     required this.onPressed,
@@ -23,15 +27,13 @@ class Button extends StatelessWidget {
     final double radius = rounded ? 30 : 8;
 
     return SizedBox(
-      width: double.infinity,
-      height: 52,
+      width: width,
+      height: height,
       child: ElevatedButton(
         onPressed: onPressed,
-        style: OutlinedButton.styleFrom(
-          backgroundColor: color,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(radius),
-          ),
+        style: ElevatedButton.styleFrom(
+          primary: color,
+          shape: const StadiumBorder(),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,

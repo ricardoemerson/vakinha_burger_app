@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 const primaryColor = Color(0xFF007D21);
 const blackColor = Color(0xFF000000);
+const whiteColor = Color(0xFFFFFFFF);
 const titleColor = Color(0xFF00343F);
 const textColor = Color(0xFF7C7C7C);
 const greyColor = Color(0xFFAAAEB2);
@@ -19,8 +20,10 @@ const infoColor = Color(0xFF64b5f6);
 const warningColor = Color(0xFFEFB555);
 
 const inputLabelColor = Color(0xFF323F4B);
+const inputBorderColor = Color(0xFFBDBDBD);
 const inputHintTextColor = Color(0xFF7B8794);
-const buttonLabelColor = Color(0xFF323F4B);
-const backgroundColor = Color(0xFFFFFFFF);
+const inputErrorTextColor = Colors.redAccent;
+const buttonLabelColor = whiteColor;
+const backgroundColor = whiteColor;
 const subTitleColor = Color(0xff383838);
 const sectionColor = Color(0xFF323F4B);
