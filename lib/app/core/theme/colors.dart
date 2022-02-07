@@ -25,5 +25,6 @@ const inputHintTextColor = Color(0xFF7B8794);
 const inputErrorTextColor = Colors.redAccent;
 const buttonLabelColor = whiteColor;
 const backgroundColor = whiteColor;
+const backgroundDarkColor = Color(0xFF140E0E);
 const subTitleColor = Color(0xff383838);
 const sectionColor = Color(0xFF323F4B);

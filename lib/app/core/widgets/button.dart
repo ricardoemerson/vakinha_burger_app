@@ -7,7 +7,6 @@ class Button extends StatelessWidget {
   final Color? color;
   final double? width;
   final double height;
-  final bool rounded;
   final bool loading;
   final VoidCallback? onPressed;
 
@@ -17,15 +16,12 @@ class Button extends StatelessWidget {
     this.color,
     this.width,
     this.height = 50,
-    this.rounded = false,
     this.loading = false,
     required this.onPressed,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final double radius = rounded ? 30 : 8;
-
     return SizedBox(
       width: width,
       height: height,
