@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../theme/theme.dart';
 
@@ -19,6 +20,11 @@ class AppTheme {
       iconTheme: IconThemeData(color: Colors.black),
       elevation: 0,
       titleTextStyle: titleTextStyle,
+      systemOverlayStyle: SystemUiOverlayStyle(
+        statusBarColor: backgroundColor,
+        statusBarBrightness: Brightness.dark,
+        statusBarIconBrightness: Brightness.dark,
+      ),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
