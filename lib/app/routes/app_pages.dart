@@ -1,20 +1,13 @@
-import 'package:get/get.dart';
-
-import '../modules/splash/splash_binding.dart';
-import '../modules/splash/splash_view.dart';
-
-part 'app_routes.dart';
+import 'auth_routes.dart';
+import 'splash_routes.dart';
 
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.SPLASH;
+  static const INITIAL = '/splash';
 
   static final routes = [
-    GetPage(
-      name: _Paths.SPLASH,
-      page: SplashView.new,
-      binding: SplashBinding(),
-    ),
+    ...SplashRoutes.routes,
+    ...AuthRoutes.routes,
   ];
 }
